@@ -1,0 +1,173 @@
+*{
+
+	margin:0;
+
+	padding:0;
+
+}
+
+body{
+
+	font:14px "Microsoft Yahei";
+
+}
+
+a{
+
+	text-decoration:none;
+
+	color:#000;
+
+}
+
+img{
+
+	border:0;	
+
+}
+
+ul,li{
+
+	list-style:none;
+
+	margin:0;
+
+	padding:0;
+
+}
+
+#main{
+
+	width:600px;
+
+	height:300px;
+
+	margin-top:-200px;
+
+	margin-left:-300px;
+
+	position:absolute;
+
+	left:50%;
+
+	top:50%;
+
+}
+
+#main #logo{
+
+	width:600px;
+
+	height:50px;
+
+	text-align:center;
+
+	font:50px Arial,"黑体";
+
+}
+
+#main #logo a{
+	color:#888;
+}
+
+#main #content{
+
+	margin-top:5px;
+
+	width:600px;
+
+	height:245px;
+
+	background-color:#CCC;
+
+	border-bottom:5px #AAA solid;
+
+}
+
+#main #content .blank65{
+
+	width:600px;
+
+	height:65px;
+
+}
+
+#main #content .blank30{
+
+	width:600px;
+
+	height:30px;
+
+}
+
+#main #content #input_frame{
+
+	height:20px;
+
+	width:400px;
+
+	margin:0 auto;
+
+}
+
+#main #content #input{
+
+	height:20px;
+
+	width:400px;
+
+}
+
+#main #content #short_frame{
+
+	height:20px;
+
+	width:150px;
+
+	margin:0 auto;
+
+}
+
+#main #content #short{
+
+	height:20px;
+
+	width:150px;
+
+}
+
+#main #content #button_frame{
+
+	height:20px;
+
+	width:60px;
+
+	margin:0 auto;
+
+	
+
+}
+
+#main #content #button{
+
+	height:20px;
+
+	width:60px;
+
+	background-color:#EEE;
+
+	border:#AAA 1px solid;
+
+}
+
+#main #bottom{
+
+	height:20px;
+
+	width:600px;
+
+	text-align:center;
+
+	margin:0 auto;
+
+}
