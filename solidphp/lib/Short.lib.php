@@ -29,7 +29,7 @@
 		}
 		
 		public function insert($content, $short=''){
-			if(strpos($content,'http://') !== 0){
+			if((strpos($content,'http://') !== 0) && (strpos($content,'https://') !== 0)){
 				$content = 'http://'.$content;
 			}
 			$s = $this->inserted($content);
@@ -47,7 +47,7 @@
 		}
 		
 		public function update($short, $content){
-			if(strpos($content,'http://') !== 0){
+			if((strpos($content,'http://') !== 0) && (strpos($content,'https://') !== 0)){
 				$content = 'http://'.$content;
 			}
 			return $this->db->update($this->table,'url',$content,'short=\''.$short.'\'');
@@ -58,6 +58,11 @@
 			if(!empty($short)){
 				$temp = $this->db->select('url,click',$this->table,'short=\''.$short.'\'');
 				if(!empty($temp['url'])){
+					if(stripos($temp['url'],_SITE_)===0){
+						$temp['url'] = _SITE_;
+					}else if(stripos($temp['url'],_SITE_)===0){
+						$temp['url'] = _SITE_;
+					}
 					$this->db->update($this->table,'click',$temp['click']+1,'short=\''.$short.'\'');
 					header('location: '.$temp['url']);
 				}else{
