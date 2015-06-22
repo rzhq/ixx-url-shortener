@@ -16,7 +16,7 @@ $(document).ready(function(){
 		if(!is_url()){
 			alert("请输入正确的网址");
 		}else{
-			$.post("index.php/Index/make",{url:$("#input").val()},function(r){
+			$.post("index.php",{url:$("#input").val()},function(r){
 				$("#hs").show();
 				$("#short").val(r);
 			});
